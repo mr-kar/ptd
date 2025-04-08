@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .team-container {
+      max-width: 1000px;
+      margin: 100px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .team-container h2 {
+      font-size: 2em;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+
+    .members {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .member-card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .member-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .member-name {
+      font-size: 1.2em;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .member-role {
+      font-size: 0.95em;
+      margin-bottom: 10px;
+      color: #777;
+    }
+
+    .instagram-link {
+      text-decoration: none;
+      color: #e1306c;
+      font-weight: 500;
+    }
+
+    .instagram-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-link" id="navLink">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+  <div class="team-container">
+    <h2>Anggota Kelompok</h2>
+    <div class="members">
+
+      <div class="member-card">
+        <div class="member-name">Hafidz Al<br>Ghazali</div>
+        <div class="member-role">15-2024-046</div>
+        <a href="https://www.instagram.com/apissss_al?igsh=MXd0eWN1N2Nnd2RkZA==" target="_blank" class="instagram-link"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <div class="member-card">
+        <div class="member-name">Fikhar Ramadhani Ilham</div>
+        <div class="member-role">15-2024-064</div>
+        <a href="https://www.instagram.com/fikharrmdhn/" target="_blank" class="instagram-link"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <div class="member-card">
+        <div class="member-name">Naufal Rizkia Saputra</div>
+        <div class="member-role">15-2024-050</div>
+        <a href="https://www.instagram.com/nnaufalrizkiaa?igsh=eThidWtqdGQyc3ds" target="_blank" class="instagram-link"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <div class="member-card">
+        <div class="member-name">Azizan Rizqan Ramadhan</div>
+        <div class="member-role">15-2024-077</div>
+        <a href="https://www.instagram.com/_azizanrzqn?igsh=eWd0bm9idHhpdGMw" target="_blank" class="instagram-link"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      
+      
+    </div>
+</div>
+<footer>
+  <div class="footer-text">
+    <p>IFB-114 PENGANTAR TRANSFORMASI DIGITAL</p>
+  </div>
+  <div class="footer-bottom">
+    <p>Institut Teknologi Nasional Bandung</p>
+    <ul class="social-icon">
+      <li>
+        <a href="https://www.youtube.com/@itenas-official"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/itenas.official/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.itenas.ac.id/"
+          ><i class="fa-brands fa-google"></i
+        ></a>
+      </li>
+    </ul>
+  </div>
+</footer>
+<script src="/js/owl.carousel.min.js"></script>
+
+<script>
+  var navLink = document.getElementById("navLink");
+
+  function showMenu() {
+    navLink.style.right = "0";
+  }
+
+  function hideMenu() {
+    navLink.style.right = "-200px";
+  }
+</script>
+</body>
+</html>
